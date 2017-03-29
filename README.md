@@ -29,15 +29,15 @@ http://DemocracyUnchained.org
 For doing local development on our microservices architecture (or to create your own local fork to experiment with our software) you'll need to follow these steps:
 
 1. Install Docker.
-  * On Linux, you'll need to install Docker Compose separately. See the instructions [here][https://docs.docker.com/compose/install/].
-  * On Windows/Mac, use [Docker Toolbox][https://www.docker.com/products/docker-toolbox] to install.
+  * On Linux, you'll need to install Docker Compose separately. See the instructions [here](https://docs.docker.com/compose/install/).
+  * On Windows/Mac, use [Docker Toolbox](https://www.docker.com/products/docker-toolbox) to install.
 2. Clone the microservices project:
   * `git clone https://github.com/DemocracyUnchained/microservices.git`
 3. Change into the docker directory:
   * `cd microservices/docker`
 4. Initialize your database:
   * `make init_db`
-  ** If your local machine is already running MySQL listening on port 3306, this step will fail. To fix the failure, either shutdown you local MySQL instance *or* change the port used by your local MySQL instance or the Docker MySQL container.
+    * If your local machine is already running MySQL listening on port 3306, this step will fail. To fix the failure, either shutdown you local MySQL instance *or* change the port used by your local MySQL instance or the Docker MySQL container.
 5. Start the project containers:
   * `make start`
 6. Point your browser to the development instance here:
